@@ -1,19 +1,19 @@
 ---
 layout: workshop
 root: .
-venue: FIXME      # brief name of host site without address (e.g., "Euphoric State University")
-address: FIXME    # street address of workshop (e.g., "123 Forth Street, Blimingen, Euphoria")
-country: FIXME    # country (two-letter ISO code such as "fr" - see https://en.wikipedia.org/wiki/ISO_3166-1)
-language: FIXME   # language (two-letter ISO code such as "fr" - see https://en.wikipedia.org/wiki/ISO_639-1)
-latlng: FIXME     # fractional latitude and longitude (e.g., "41.7901128,-87.6007318"; you can use http://www.latlong.net/)
-humandate: FIXME  # human-readable date (e.g., "Feb 17-18, 2020")
-humantime: FIXME  # human-readable time (e.g., "9:00 am - 4:30 pm")
-startdate: FIXME  # use YYYY-MM-DD format like "2015-01-01"
-enddate: FIXME    # use YYYY-MM-DD format like" 2015-01-02"
-instructor: FIXME # list of names like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: FIXME     # list of names like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
-contact: FIXME    # contact email address for workshop organizer, such as "grace@hopper.org"
-etherpad:         # optional (insert the URL for your Etherpad if you're using one)
+venue: Avida Workshop - Michigan State University   # brief name of host site without address (e.g., "Euphoric State University")
+address: Biomedical and Physical Sciences Building, 567 Wilson Road Room 1455A, East Lansing, MI, 48824    # street address of workshop (e.g., "123 Forth Street, Blimingen, Euphoria")
+country: United-States    # country (two-letter ISO code such as "fr" - see https://en.wikipedia.org/wiki/ISO_3166-1)
+language: en   # language (two-letter ISO code such as "fr" - see https://en.wikipedia.org/wiki/ISO_639-1)
+latlng: 42.724158, -84.476167     # fractional latitude and longitude (e.g., "41.7901128,-87.6007318"; you can use http://www.latlong.net/)
+humandate: Oct 17-18, 2015  # human-readable date (e.g., "Feb 17-18, 2020")
+humantime: 9:00am - 4:30 pm Saturday, 9:00am - 3:30pm Sunday  # human-readable time (e.g., "9:00 am - 4:30 pm")
+startdate: 2015-10-17  # use YYYY-MM-DD format like "2015-01-01"
+enddate: 2015-10-18    # use YYYY-MM-DD format like" 2015-01-02"
+instructor: ["Cliff Bohm", "Josh Nahum", "Emily Dolson"] # list of names like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
+helper: ["Alex Lalejini"]     # list of names like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+contact: dolsonem@msu.edu    # contact email address for workshop organizer, such as "grace@hopper.org"
+etherpad: https://etherpad.mozilla.org/avida-msu-10-17-2015     # optional (insert the URL for your Etherpad if you're using one)
 eventbrite:       # optional (insert the alphanumeric key for Eventbrite registration, e.g., "1234567890AB")
 ---
 <!--
@@ -52,15 +52,27 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
   the pitch.
 -->
 <p>
-  <a href="{{site.swc_site}}">Software Carpentry</a>'s mission
-  is to help scientists and engineers get more research done in less
-  time and with less pain by teaching them basic lab skills for
-  scientific computing.  This hands-on workshop will cover basic
-  concepts and tools, including program design, version control, data
-  management, and task automation.  Participants will be encouraged to
-  help one another and to apply what they have learned to their own
-  research problems.
+  <a href="{{site.swc_site}}"> Avida is a free, open source scientific software platform for 
+  conducting and analyzing experiments with self-replicating and evolving computer programs. 
+  It provides detailed control over experimental settings and protocols, a large array of measurement tools, 
+  and sophisticated methods to analyze and post-process experimental data. As a very different instantiation of
+  evolution from biological evolution, Avida can often function as a way of testing the generality of evolutionary
+  hypotheses. In addition, Avida's fast generation times and complete information about evolutionary trajectories can
+  make it possible to test hypotheses that would be intractable in most biological systems.
+
+<p>
+But we know Avida can have a steep learning curve. A big part of that, especially for people with a less computational 
+background, is that there are a lot of computational skills that are necessary (or at least highly useful) for 
+running experiments in Avida. Increasingly, these skills are also useful for scientific computing more generally.
+That's why we created this workshop: a Software Carpentry workshop with a focus on getting participants up and
+running with Avida. Software Carpentry is a series of workshops with the mission of helping scientists and 
+engineers get more research done in less time and with less pain by teaching them these skills for scientific 
+computing. This hands-on workshop will cover basic concepts and tools, including program design, version control,
+data management, and task automation. We will also apply all of these general concepts to the specific case of
+working with Avida; over the course of the workshop, participants will configure a run of Avida, submit it to
+a compute cluster, and analyze the results.
 </p>
+
 <p align="center">
   <em>
     For more information on what we teach and why,
@@ -77,7 +89,10 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
 -->
 <p>
   <strong>Who:</strong>
-  The course is aimed at graduate students and other researchers.
+  This course is aimed at people of all levels, from undergraduates to professors and 
+  everywhere in between, who are interested in learning how to use the Avida Digital Evolution 
+  platform for their research (or personal gratification!). We will also be covering skills for scientific computing
+  more generally (see full syllabus below), which we expect will be helpful in your work beyond Avida as well. 
   <strong>You don't need to have any previous knowledge of the tools that will
     be presented at the workshop.</strong>
 </p>
@@ -141,18 +156,20 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
   to match your plans.  You may also want to change 'Day 1' and 'Day
   2' to be actual dates or days of the week.
 -->
-<h2>Schedule</h2>
+<h2>Schedule - SUBJECT TO REARRANGEMENT</h2>
 
 <div class="row">
   <div class="col-md-6">
     <h3>Day 1</h3>
     <table class="table table-striped">
-      <tr> <td>09:00</td>  <td>Automating tasks with the Unix shell</td> </tr>
+      <tr> <td>09:00</td>  <td>Intro to Avida</td> </tr>
       <tr> <td>10:30</td> <td>Coffee</td> </tr>
+      <tr> <td>10:45</td>  <td>Automating tasks with the Unix Shell</td> </tr>
       <tr> <td>12:00</td>  <td>Lunch break</td> </tr>
-      <tr> <td>13:00</td>  <td>Building programs with Python</td> </tr>
-      <tr> <td>14:30</td>  <td>Coffee</td> </tr>
-      <tr> <td>16:00</td>  <td>Wrap-up</td> </tr>
+      <tr> <td>1:00</td>  <td>Using the Unix Shell to run Avida</td> </tr>
+      <tr> <td>2:30</td>  <td>Coffee</td> </tr>
+      <tr> <td>2:45</td>  <td>Building programs with Python</td> </tr>
+      <tr> <td>4:00</td>  <td>Wrap-up </td> </tr>
     </table>
   </div>
   <div class="col-md-6">
@@ -161,9 +178,9 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
       <tr> <td>09:00</td>  <td>Version control with Git</td> </tr>
       <tr> <td>10:30</td>  <td>Coffee</td> </tr>
       <tr> <td>12:00</td>  <td>Lunch break</td> </tr>
-      <tr> <td>13:00</td>  <td>Managing data with SQL</td> </tr>
-      <tr> <td>14:30</td>  <td>Coffee</td> </tr>
-      <tr> <td>16:00</td>  <td>Wrap-up</td> </tr>
+      <tr> <td>1:00</td>  <td>Analyzing data with Python</td> </tr>
+      <tr> <td>2:15</td>  <td>Coffee</td> </tr>
+      <tr> <td>2:30</td>  <td>Avida in depth</td> </tr>
     </table>
   </div>
 </div>
@@ -209,7 +226,7 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
   please preview your site before committing, and make sure to run
   'tools/check' as well.
 -->
-<h2>Syllabus</h2>
+<h2>Rough Syllabus (subject to change - let us know if there's something specific that you want to learn!)</h2>
 
 <div class="row">
   <div class="col-md-6">
@@ -221,6 +238,7 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
       <li>Looping over files</li>
       <li>Creating and running shell scripts</li>
       <li>Finding things</li>
+      <li>Connecting to high performance clusters</li>
       <li><a href="{{site.swc_githubio}}/shell-novice/reference.html">Reference...</a></li>
     </ul>
   </div>
@@ -237,32 +255,6 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
       <li><a href="{{site.swc_githubio}}/python-novice-inflammation/reference.html">Reference...</a></li>
     </ul>
   </div>
-  <!--
-  <div class="col-md-6">
-    <h3>Programming in R</h3>
-    <ul>
-      <li>Working with vectors and data frames</li>
-      <li>Reading and plotting data</li>
-      <li>Creating and using functions</li>
-      <li>Loops and conditionals</li>
-      <li>Using R from the command line</li>
-      <li><a href="{{site.swc_githubio}}/r-novice-inflammation/reference.html">Reference...</a></li>
-    </ul>
-  </div>
-  -->
-  <!--
-  <div class="col-md-6">
-    <h3>Programming in MATLAB</h3>
-    <ul>
-      <li>Working with arrays</li>
-      <li>Reading and plotting data</li>
-      <li>Creating and using functions</li>
-      <li>Loops and conditionals</li>
-      <li>Defensive programming</li>
-      <li><a href="{{site.swc_githubio}}/matlab-novice-inflammation/reference.html">Reference...</a></li>
-     </ul>
-   </div>
-   -->
 </div>
 
 <div class="row">
@@ -277,23 +269,22 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
       <li>Resolving conflicts</li>
       <li>Open licenses</li>
       <li>Where to host work, and why</li>
+      <li>Cloning and contributing to Avida</li>
       <li><a href="{{site.swc_githubio}}/git-novice/reference.html">Reference...</a></li>
     </ul>
   </div>
   <div class="col-md-6">
-    <h3>Managing Data with SQL</h3>
+    <h3>Avida</h3>
     <ul>
-      <li>Reading and sorting data</li>
-      <li>Filtering with <code>where</code></li>
-      <li>Calculating new values on the fly</li>
-      <li>Handling missing values</li>
-      <li>Combining values using aggregation</li>
-      <li>Combining information from multiple tables using <code>join</code></li>
-      <li>Creating, modifying, and deleting data</li>
-      <li>Programming with databases</li>
-      <li><a href="{{site.swc_githubio}}/sql-novice-survey/reference.html">Reference...</a></li>
+      <li>What is Avida and how does it work?</li>
+      <li>A brief history of Avida research</li>
+      <li>Getting Avida running on your computer</li>
+      <li>Planning, setting up, and running Avida experiments</li>
+      <li>Common configurations to build off of</li>
+      <li>Contributing to Avida</li>
     </ul>
   </div>
+
 </div>
 
 <hr/>
@@ -313,7 +304,7 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
 <h2 id="setup">Setup</h2>
 
 <p>
-  To participate in a Software Carpentry workshop, you will need
+  To participate in this workshop, you will need
   access to the software described below. In addition, you will
   need an up-to-date web browser.
 </p>
@@ -562,87 +553,6 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
   </p>
 </div> <!-- End of 'Python' section. -->
 
-<div id="r"> <!-- Start of 'R' section. -->
-  <h3>R</h3>
-
-  <p>
-    <a href="http://www.r-project.org">R</a> is a programming language
-    that is especially powerful for data exploration, visualization, and
-    statistical analysis. To interact with R, we use
-    <a href="http://www.rstudio.com/">RStudio</a>.
-  </p>
-
-  <div class="row">
-    <div class="col-md-4">
-      <h4 id="r-windows">Windows</h4>
-      <p>
-        Install R by downloading and running
-        <a href="http://cran.r-project.org/bin/windows/base/release.htm">this .exe file</a>
-        from <a href="http://cran.r-project.org/index.html">CRAN</a>.
-        Also, please install the
-        <a href="http://www.rstudio.com/ide/download/desktop">RStudio IDE</a>.
-      </p>
-    </div>
-    <div class="col-md-4">
-      <h4 id="r-macosx">Mac OS X</h4>
-      <p>
-        Install R by downloading and running
-        <a href="http://cran.r-project.org/bin/macosx/R-latest.pkg">this .pkg file</a>
-        from <a href="http://cran.r-project.org/index.html">CRAN</a>.
-        Also, please install the
-        <a href="http://www.rstudio.com/ide/download/desktop">RStudio IDE</a>.
-      </p>
-    </div>
-    <div class="col-md-4">
-      <h4 id="r-linux">Linux</h4>
-      <p>
-        You can download the binary files for your distribution
-        from <a href="http://cran.r-project.org/index.html">CRAN</a>. Or
-        you can use your package manager (e.g. for Debian/Ubuntu
-        run <code>sudo apt-get install r-base</code> and for Fedora run
-        <code>sudo yum install R</code>).  Also, please install the
-        <a href="http://www.rstudio.com/ide/download/desktop">RStudio IDE</a>.
-      </p>
-    </div>
-  </div>
-</div> <!-- End of 'R' section. -->
-
-<div id="sql"> <!-- Start of 'SQLite' section. -->
-  <h3>SQLite</h3>
-
-  <p>
-    SQL is a specialized programming language used with databases.  We
-    use a simple database manager called
-    <a href="http://www.sqlite.org/">SQLite</a> in our lessons.
-  </p>
-
-  <div class="row">
-    <div class="col-md-4">
-      <h4 id="sql-windows">Windows</h4>
-      <p>
-        The <a href="{{site.swc_github}}/windows-installer">Software Carpentry Windows Installer</a>
-        installs SQLite for Windows.
-        If you used the installer to configure nano, you don't need to run it again.
-      </p>
-    </div>
-    <div class="col-md-4">
-      <h4 id="sql-macosx">Mac OS X</h4>
-      <p>
-        SQLite comes pre-installed on Mac OS X.
-      </p>
-    </div>
-    <div class="col-md-4">
-      <h4 id="sql-linux">Linux</h4>
-      <p>
-        SQLite comes pre-installed on Linux.
-      </p>
-    </div>
-  </div>
-
-  <p><strong>If you installed Anaconda, it also has a copy of SQLite
-    <a href="https://github.com/ContinuumIO/anaconda-issues/issues/307">without support to <code>readline</code></a>.
-    Instructors will provide a workaround for it if needed.</strong></p>
-</div> <!-- End of 'SQLite' section. -->
 
 <!--
   Uncomment this section if you are using our virtual machine.
